@@ -1,0 +1,383 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+}
+
+.intro-section {
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    margin-bottom: 30px;
+}
+
+.image-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rounded-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.services-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.services-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.service-column {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: 10px;
+    text-align: left;
+}
+
+.service-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-column p {
+    font-size: 1rem;
+}
+
+/* Resources Section */
+.resources-section {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.resources-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resource-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.resource-text, .resource-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.resource-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.checkmark-list {
+    list-style: none;
+    padding: 0;
+}
+
+.checkmark-list li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: green;
+}
+
+.resource-image img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 60px 50px;
+}
+
+.testimonial-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-source {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Blog Section */
+.blog-section {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.post-title a {
+    color: #0073e6;
+    font-size: 1.5rem;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.pagination a {
+    margin: 0 10px;
+    color: #0073e6;
+}
+
+.pagination-numbers {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    background-color: #e0f7fa;
+    text-align: center;
+    padding: 50px;
+}
+
+.subscribe-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subscribe-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-columns, .resource-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-column, .resource-text, .resource-image {
+        max-width: 100%;
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .resource-item {
+        flex-direction: column;
+    }
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto; /* Adjust margin as needed */
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 500px; /* Adjust height as needed */
+}
+
+/* Fade Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Dots/Indicators */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .mySlides img {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        padding: 12px;
+    }
+}

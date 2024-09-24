@@ -2835,3 +2835,39 @@ body.is-menu-visible #menu {
   transform: translateX(0);
   box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
   visibility: visible; }
+
+
+
+/* style for counter */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#counter-section {
+  background-color: #2b2b2b;
+  padding: 40px;
+  text-align: center;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.counter-box {
+  color: white;
+}
+
+.counter {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+}
+

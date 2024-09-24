@@ -43,3 +43,39 @@
 			});
 
 })(jQuery);
+
+
+// Function to animate the counter
+function animateCounter(counter) {
+    const target = +counter.getAttribute('data-target');
+    const increment = target / 200; // Speed control
+    let currentValue = 0;
+    
+    const updateCounter = () => {
+        currentValue += increment;
+        
+        if (currentValue < target) {
+            counter.innerText = Math.ceil(currentValue);
+            requestAnimationFrame(updateCounter); // Smooth animation
+        } else {
+            counter.innerText = target; // Set to the final target value
+        }
+    };
+    
+    updateCounter();
+}
+
+// Intersection Observer to start the counter when in view
+let countersStarted = false;
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !countersStarted) {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => animateCounter(counter));
+            countersStarted = true; // Prevent repeated animations
+        }
+    });
+}, { threshold: 0.5 }); // Start when 50% of the section is in view
+
+observer.observe(document.querySelector('#counter-section'));
