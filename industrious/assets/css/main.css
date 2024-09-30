@@ -2909,83 +2909,10 @@ body {
 }
 
 
-/* owl carousel from code pen  */
-
-
-.shadow-effect {
-  background: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  text-align: center;
-border:1px solid #ECECEC;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
-}
-#customers-testimonials .shadow-effect p {
-  font-family: inherit;
-  font-size: 17px;
-  line-height: 1.5;
-  margin: 0 0 17px 0;
-  font-weight: 300;
-}
-.testimonial-name {
-  margin: -17px auto 0;
-  display: table;
-  width: auto;
-  background: #3190E7;
-  padding: 9px 35px;
-  border-radius: 12px;
-  text-align: center;
-  color: #fff;
-  box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
-}
-#customers-testimonials .item {
-  text-align: center;
-  padding: 50px;
-  margin-bottom:80px;
-  opacity: .2;
-  -webkit-transform: scale3d(0.8, 0.8, 1);
-  transform: scale3d(0.8, 0.8, 1);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-#customers-testimonials .owl-item.active.center .item {
-  opacity: 1;
-  -webkit-transform: scale3d(1.0, 1.0, 1);
-  transform: scale3d(1.0, 1.0, 1);
-}
-.owl-carousel .owl-item img {
-  transform-style: preserve-3d;
-  max-width: 90px;
-  margin: 0 auto 17px;
-}
-#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
-#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
-  background: #3190E7;
-  transform: translate3d(0px, -50%, 0px) scale(0.7);
-}
-#customers-testimonials.owl-carousel .owl-dots{
-display: inline-block;
-width: 100%;
-text-align: center;
-}
-#customers-testimonials.owl-carousel .owl-dots .owl-dot{
-display: inline-block;
-}
-#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
-  background: #3190E7;
-  display: inline-block;
-  height: 20px;
-  margin: 0 2px 5px;
-  transform: translate3d(0px, -50%, 0px) scale(0.3);
-  transform-origin: 50% 50% 0;
-  transition: all 250ms ease-out 0s;
-  width: 20px;
-}
 
 
 /* styles for my-owl-carousel testimonials */
-
+/*
 .my-slider{
   margin-bottom: 30px;
   position: relative;
@@ -2993,7 +2920,6 @@ display: inline-block;
 .my-slider .owl-item.active.center .my-slider-card{
   transform: scale(1.5);
   opacity: 1;
-/* background-color: ; */
 color: #fff;
 }
 
@@ -3040,7 +2966,7 @@ color: #fff;
 }
 .owl-dots .owl-dot.active {
   background: #27d0ff !important;
-}
+} */
 
 
 /* -- end -- */
@@ -3351,7 +3277,7 @@ color: #fff;
   font-size: 18px;
   line-height: 28px;
   color: rgb(255, 255, 255);
-  background-color: #7cbcfc;
+  background-color: #007bff;
   border-top-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 0px;
@@ -4008,4 +3934,80 @@ body {
   .wk-mobile-12 {
     width: 100%;
   }
+}
+
+
+/* final owl carousel slider */
+
+
+.shadow-effect {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+border:1px solid #ECECEC;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+}
+#customers-testimonials .shadow-effect p {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 17px 0;
+  font-weight: 300;
+}
+.testimonial-name {
+  margin: -17px auto 0;
+  display: table;
+  width: auto;
+  background: #3190E7;
+  padding: 9px 35px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+#customers-testimonials .item {
+  text-align: center;
+  padding: 50px;
+  margin-bottom:80px;
+  opacity: .2;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1.0, 1.0, 1);
+  transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+  max-width: 90px;
+  margin: 0 auto 17px;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+  background: #3190E7;
+  transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots{
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+display: inline-block;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+  background: #82898f;
+  border-radius: 50%;
+  display: inline-block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px;
 }

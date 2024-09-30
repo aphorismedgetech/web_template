@@ -1,8 +1,33 @@
-/*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+// Owlcarousel
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+      margin:10,
+      nav:true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      center: true,
+      navText: [
+          "<i class='fa fa-angle-left'></i>",
+          "<i class='fa fa-angle-right'></i>"
+      ],
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:3
+          }
+      }
+    });
+  });
+
+
+
 (function($) {
 
 	var	$window = $(window),
@@ -104,36 +129,6 @@ observer.observe(document.querySelector('#counter-section'));
 // 		}
 // 	});
 // });
-
-
-// Owlcarousel
-$(document).ready(function(){
-	$(".my-owl-carousel").owlCarousel({
-	  loop: true,
-	  margin: 10,
-	  nav: true,
-	  autoplay: true,
-	  autoplayTimeout: 3000,
-	  autoplayHoverPause: true,
-	  center: true,
-	  navText: [
-		"<i class='fa fa-angle-left'></i>",
-		"<i class='fa fa-angle-right'></i>"
-	  ],
-	  responsive: {
-		0: {
-		  items: 1
-		},
-		600: {
-		  items: 1
-		},
-		1000: {
-		  items: 3
-		}
-	  }
-	});
-  });  
-
 
 //    ---------------------------------------------------------------------------------
 
