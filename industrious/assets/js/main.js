@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         loop:true,
-      margin:10,
+      margin:0,
       nav:true,
       autoplay:true,
       autoplayTimeout:3000,
@@ -142,7 +142,7 @@ observer.observe(document.querySelector('#counter-section'));
   const nextButton = document.querySelector('.next');
   
   let currentIndex = 1; // Start at the first original slide
-  let totalSlides = slides.length + 2; // Account for the cloned slides
+  let totalSlides = slides.length ; // Account for the cloned slides
   let autoSlideInterval;
   
   // Clone the first and last slides
