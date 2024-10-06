@@ -4005,8 +4005,8 @@ display: inline-block;
   border-radius: 50%;
   display: inline-block;
   height: 20px;
-  margin: 0 2px 5px;
-  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  /*margin: 0 2px 5px;*/
+  transform: translate3d(0px, 0%, 0px) scale(0.3);
   transform-origin: 50% 50% 0;
   transition: all 250ms ease-out 0s;
   width: 20px;
