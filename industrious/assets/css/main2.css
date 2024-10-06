@@ -79,3 +79,36 @@ display: inline-block;
     width: 20px;
     border-radius: 50%;
 }
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    background-color: #3190E7;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    background-color: #1b68a4;
+}
+
+.owl-nav .arrow-left::before {
+    font-family: 'FontAwesome';
+}
+
+.owl-nav .arrow-right::before {
+    font-family: 'FontAwesome';
+}
+
+
