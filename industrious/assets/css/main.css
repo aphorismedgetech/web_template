@@ -3986,7 +3986,7 @@ border:4px solid #ececec;
   max-width: 90px;
   margin: 0 auto 15px;
 }
-#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+/* #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
   background: #3190E7;
   transform: translate3d(0px, -50%, 0px) scale(0.7);
@@ -3998,7 +3998,7 @@ text-align: center;
 }
 #customers-testimonials.owl-carousel .owl-dots .owl-dot{
 display: inline-block;
-}
+} */
 /*#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
   background: #82898f;
   border-radius: 50%;
@@ -4009,4 +4009,4 @@ display: inline-block;
   transform-origin: 50% 50% 0;
   transition: all 250ms ease-out 0s;
   width: 20px;
-}
+}*/
